@@ -3,71 +3,84 @@ using UnityEngine.Splines;
 
 public class FlySwarm : MonoBehaviour
 {
-    [Header("Variedad")]
-    public GameObject[] flyPrefabs;          // tus 3 FBX/prefabs
-    public SplineContainer[] paths;
-
-    [Header("Enjambre")]
+    [Header("Moscas")]
+    public GameObject[] flyPrefabs;
+    public SplineContainer path;              // UN solo spline
     public int count = 50;
-    public Vector2 durationRange = new Vector2(6f, 12f);
-    public float spread = 0.5f;              // dispersión inicial respecto al camino
     public Vector2 scaleRange = new Vector2(0.9f, 1.1f);
+    public Vector3 modelRotationOffset = Vector3.zero; // corrige hacia dónde mira el modelo
 
-    [Header("Orientación sobre el spline")]
-    public SplineComponent.AlignAxis forwardAxis = SplineComponent.AlignAxis.ZAxis;
-    public SplineComponent.AlignAxis upAxis = SplineComponent.AlignAxis.YAxis;
+    [Header("Línea de tiempo (30 s)")]
+    public float totalTime = 30f;
+    public float entryStagger = 3f;           // las moscas entran repartidas en estos segundos
 
-    [Header("Movimiento orgánico (Perlin)")]
-    public bool useNoise = true;
-    public Vector2 noiseAmplitudeRange = new Vector2(0.15f, 0.4f);
+    [Tooltip("Eje X: tiempo normalizado (0-1). Eje Y: posición en el spline (0-1)")]
+    public AnimationCurve progress = new AnimationCurve(
+        new Keyframe(0f, 0f),
+        new Keyframe(0.13f, 0.15f),   // entra por la ventana
+        new Keyframe(0.40f, 0.22f),   // revolotea en la habitación (casi plano)
+        new Keyframe(0.65f, 0.85f),   // recorre el pasillo
+        new Keyframe(1f, 1f));        // revolotea al final
+
+    [Tooltip("Cuánto se abre la nube en cada momento. Alto = revoloteo, bajo = en fila")]
+    public AnimationCurve spreadOverTime = new AnimationCurve(
+        new Keyframe(0f, 0.3f),
+        new Keyframe(0.10f, 0.3f),
+        new Keyframe(0.17f, 1f),
+        new Keyframe(0.38f, 1f),
+        new Keyframe(0.45f, 0.3f),
+        new Keyframe(0.60f, 0.3f),
+        new Keyframe(0.72f, 1f),
+        new Keyframe(1f, 1f));
+
+    [Header("Nube / orgánico")]
+    public float spread = 1.0f;               // radio de la nube en el revoloteo
+    public Vector2 noiseAmplitudeRange = new Vector2(0.3f, 0.8f);
     public Vector2 noiseFrequencyRange = new Vector2(0.8f, 1.8f);
-    public float noiseRotation = 15f;
+
+    [Header("Depuración")]
+    [Range(0f, 1f)] public float debugT = 0f; // mueve el slider para ver la posición en el spline
 
     void Start()
     {
         for (int i = 0; i < count; i++)
         {
-            // 1. Contenedor que recorre el spline
             GameObject root = new GameObject("Fly_" + i);
             root.transform.SetParent(transform);
 
-            var anim = root.AddComponent<SplineAnimate>();
-            anim.Container = paths[Random.Range(0, paths.Length)];
-            anim.ObjectForwardAxis = forwardAxis;
-            anim.ObjectUpAxis = upAxis;
-            anim.Duration = Random.Range(durationRange.x, durationRange.y);
-            anim.Loop = SplineAnimate.LoopMode.Loop;
-            anim.NormalizedTime = Random.value;
+            var f = root.AddComponent<FlyPathFollower>();
+            f.path = path;
+            f.progress = progress;
+            f.spreadOverTime = spreadOverTime;
+            f.totalTime = totalTime;
+            f.delay = Random.Range(0f, entryStagger);
+            f.fixedOffset = Random.insideUnitSphere * spread;
+            f.noiseAmp = Random.Range(noiseAmplitudeRange.x, noiseAmplitudeRange.y);
+            f.noiseFreq = Random.Range(noiseFrequencyRange.x, noiseFrequencyRange.y);
 
-            // 2. Modelo visual (uno de los prefabs al azar)
             GameObject prefab = flyPrefabs[Random.Range(0, flyPrefabs.Length)];
             GameObject visual = Instantiate(prefab, root.transform);
-            visual.transform.localPosition = Random.insideUnitSphere * spread;
-            visual.transform.localRotation = Quaternion.identity;
+            visual.transform.localPosition = Vector3.zero;
+            visual.transform.localRotation = Quaternion.Euler(modelRotationOffset);
             visual.transform.localScale *= Random.Range(scaleRange.x, scaleRange.y);
 
-            // Si el prefab traía su propio SplineAnimate, se quita para no duplicar
             var oldAnim = visual.GetComponent<SplineAnimate>();
             if (oldAnim != null) Destroy(oldAnim);
 
-            // 3. Ruido Perlin
-            if (useNoise)
-            {
-                var wobble = visual.AddComponent<FlyWobble>();
-                wobble.amplitude = Random.Range(noiseAmplitudeRange.x, noiseAmplitudeRange.y);
-                wobble.frequency = Random.Range(noiseFrequencyRange.x, noiseFrequencyRange.y);
-                wobble.rotationAmount = noiseRotation;
-            }
-
-            // 4. Aleteo desfasado
             var animator = visual.GetComponentInChildren<Animator>();
             if (animator != null)
             {
                 animator.speed = Random.Range(0.9f, 1.15f);
                 animator.Play(0, 0, Random.value);
             }
-
-            anim.Play();
         }
+    }
+
+    void OnDrawGizmos()
+    {
+        if (path == null) return;
+        path.Evaluate(debugT, out Unity.Mathematics.float3 pos, out _, out _);
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawSphere((Vector3)pos, 0.15f);
     }
 }
