@@ -5118,9 +5118,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3540725318260445992, guid: c811f1d242be88441b3dd778be2d1aa9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 165790c79b2f5134a892018332596b1c, type: 2}
     - target: {fileID: 919132149155446097, guid: c811f1d242be88441b3dd778be2d1aa9, type: 3}
       propertyPath: m_Name
       value: YayaMoto
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: c811f1d242be88441b3dd778be2d1aa9, type: 3}
+      propertyPath: m_Controller
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6056,9 +6064,9 @@ MonoBehaviour:
       Rotation:
         value:
           x: 0.2677464
-          y: -0.2838241
+          y: -0.28382406
           z: -0.5834988
-          w: 0.7122394
+          w: 0.7122393
     - Position:
         x: -1.4716142
         y: 1.27
@@ -6075,7 +6083,7 @@ MonoBehaviour:
         value:
           x: 0.13668406
           y: -0.3280167
-          z: 0.025898363
+          z: 0.025898354
           w: 0.9343724
     - Position:
         x: -1.0096142
@@ -6765,13 +6773,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961739749}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.029834816, y: -0.9212681, z: -0.07213887, w: 0.38101318}
-  m_LocalPosition: {x: 0.489, y: 0.58, z: 5.542}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.03982193, y: -0.9363442, z: 0.053131144, w: 0.3447477}
+  m_LocalPosition: {x: -0.459, y: 1.236, z: 3.428}
+  m_LocalScale: {x: 1, y: 1.2632, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -6.326, y: -134.711, z: -6.351}
+  m_LocalEulerAnglesHint: {x: 7.294, y: -139.714, z: -2.192}
 --- !u!1 &966089949
 GameObject:
   m_ObjectHideFlags: 0
@@ -9737,7 +9745,7 @@ MonoBehaviour:
   clipCama: {fileID: 1827226128182048838, guid: 5e234a53b96004f4981e6207e532a2bd, type: 3}
   scooter: {fileID: 856269271}
   yayaMoto: {fileID: 830950334}
-  clipMoto: {fileID: 1827226128182048838, guid: 755728af3d3523047865b5a93fda2c91, type: 3}
+  clipMoto: {fileID: 1827226128182048838, guid: b1d1cb975e9a5bb4aab25b6f7bd44a2d, type: 3}
   enjambre: {fileID: 852489485}
   camaraHabitacion: {fileID: 961739749}
   camaraMoto: {fileID: 110684077}
@@ -10685,6 +10693,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3540725318260445992, guid: c811f1d242be88441b3dd778be2d1aa9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 165790c79b2f5134a892018332596b1c, type: 2}
     - target: {fileID: 919132149155446097, guid: c811f1d242be88441b3dd778be2d1aa9, type: 3}
       propertyPath: m_Name
       value: YayaCama
@@ -13121,13 +13133,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1899607069}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.0028187234, w: 0.99999607}
-  m_LocalPosition: {x: 0, y: 1.028, z: 3.37}
+  m_LocalRotation: {x: 0.07033184, y: -0.09611719, z: 0.009594996, w: 0.99283576}
+  m_LocalPosition: {x: 0.263, y: 1.497, z: 3.373}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.323}
+  m_LocalEulerAnglesHint: {x: 8.135, y: -11.036, z: 0.32}
 --- !u!1 &1901649776
 GameObject:
   m_ObjectHideFlags: 0
