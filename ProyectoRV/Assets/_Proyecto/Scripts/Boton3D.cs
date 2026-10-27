@@ -7,7 +7,7 @@ using System.Collections;
 public class Boton3D : MonoBehaviour,
     IPointerDownHandler, IPointerUpHandler, IPointerExitHandler, IPointerClickHandler
 {
-    [Tooltip("Objeto que se escala. Mejor un hijo con el modelo; si está vacío, este mismo.")]
+    
     public Transform visual;
     public float pressedScale = 0.9f;
     public float bounceScale = 1.12f;
