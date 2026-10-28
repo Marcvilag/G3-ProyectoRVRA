@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VideoIntroPasillo.unity
     guid: 3e52da488c95d954ab1cbca912ed889a
+  - enabled: 1
+    path: Assets/_Proyecto/Escenas/PantallaInstrucciones.unity
+    guid: 19109cb39b54e1e41981aa00921549bf
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

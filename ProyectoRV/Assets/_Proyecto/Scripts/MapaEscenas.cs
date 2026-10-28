@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEditor;
 #endif
 
-public enum Destino { Menu, Minijuego, ProbarMoscas, Video }
+public enum Destino { Menu, Minijuego, ProbarMoscas, Video, Instrucciones }
 
 [CreateAssetMenu(menuName = "Proyecto/Mapa de escenas")]
 public class MapaEscenas : ScriptableObject
