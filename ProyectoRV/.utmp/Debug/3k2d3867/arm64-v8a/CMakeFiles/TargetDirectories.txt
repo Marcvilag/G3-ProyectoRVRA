@@ -1,0 +1,5 @@
+C:/DATA/UPV/Cuarto/ProyectoVR/ahimismo/G3-ProyectoRVRA/ProyectoRV/.utmp/Debug/3k2d3867/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/DATA/UPV/Cuarto/ProyectoVR/ahimismo/G3-ProyectoRVRA/ProyectoRV/.utmp/Debug/3k2d3867/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/DATA/UPV/Cuarto/ProyectoVR/ahimismo/G3-ProyectoRVRA/ProyectoRV/.utmp/Debug/3k2d3867/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/DATA/UPV/Cuarto/ProyectoVR/ahimismo/G3-ProyectoRVRA/ProyectoRV/.utmp/Debug/3k2d3867/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/DATA/UPV/Cuarto/ProyectoVR/ahimismo/G3-ProyectoRVRA/ProyectoRV/.utmp/Debug/3k2d3867/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir

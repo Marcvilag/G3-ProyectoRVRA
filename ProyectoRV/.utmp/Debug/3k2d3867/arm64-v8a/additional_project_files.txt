@@ -1,0 +1,17 @@
+C:\DATA\UPV\Cuarto\ProyectoVR\ahimismo\G3-ProyectoRVRA\ProyectoRV\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\GAToUnityCallbacks.h
+C:\DATA\UPV\Cuarto\ProyectoVR\ahimismo\G3-ProyectoRVRA\ProyectoRV\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\MacroEnd.h
+C:\DATA\UPV\Cuarto\ProyectoVR\ahimismo\G3-ProyectoRVRA\ProyectoRV\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\MacroHeaderBegin.h
+C:\DATA\UPV\Cuarto\ProyectoVR\ahimismo\G3-ProyectoRVRA\ProyectoRV\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\MacroSourceBegin.h
+C:\DATA\UPV\Cuarto\ProyectoVR\ahimismo\G3-ProyectoRVRA\ProyectoRV\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UGAApplication.h
+C:\DATA\UPV\Cuarto\ProyectoVR\ahimismo\G3-ProyectoRVRA\ProyectoRV\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UGAConfiguration.h
+C:\DATA\UPV\Cuarto\ProyectoVR\ahimismo\G3-ProyectoRVRA\ProyectoRV\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UGADebug.h
+C:\DATA\UPV\Cuarto\ProyectoVR\ahimismo\G3-ProyectoRVRA\ProyectoRV\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UGAEvents.h
+C:\DATA\UPV\Cuarto\ProyectoVR\ahimismo\G3-ProyectoRVRA\ProyectoRV\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UGAInput.h
+C:\DATA\UPV\Cuarto\ProyectoVR\ahimismo\G3-ProyectoRVRA\ProyectoRV\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UGASoftKeyboard.h
+C:\DATA\UPV\Cuarto\ProyectoVR\ahimismo\G3-ProyectoRVRA\ProyectoRV\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UGASoftKeyboardCallbacks.h
+C:\DATA\UPV\Cuarto\ProyectoVR\ahimismo\G3-ProyectoRVRA\ProyectoRV\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UGATypes.h
+C:\DATA\UPV\Cuarto\ProyectoVR\ahimismo\G3-ProyectoRVRA\ProyectoRV\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UGAVersion.h
+C:\DATA\UPV\Cuarto\ProyectoVR\ahimismo\G3-ProyectoRVRA\ProyectoRV\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UnityToGACallbacks.h
+C:\DATA\UPV\Cuarto\ProyectoVR\ahimismo\G3-ProyectoRVRA\ProyectoRV\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UnityToGAConfigurationCallbacks.h
+C:\DATA\UPV\Cuarto\ProyectoVR\ahimismo\G3-ProyectoRVRA\ProyectoRV\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UnityToGAKeyEventCallbacks.h
+C:\DATA\UPV\Cuarto\ProyectoVR\ahimismo\G3-ProyectoRVRA\ProyectoRV\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UnityToGAMotionEventCallbacks.h

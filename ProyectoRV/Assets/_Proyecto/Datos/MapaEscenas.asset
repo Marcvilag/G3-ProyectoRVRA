@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5e81c3c43a5a774487d896354ca6452, type: 3}
+  m_Name: MapaEscenas
+  m_EditorClassIdentifier: Assembly-CSharp::MapaEscenas
+  entradas:
+  - destino: 0
+    escena: {fileID: 102900000, guid: 12b16e1b75fecfd41b0cbd392ef9ecba, type: 3}
+    nombre: PruebasMenuInicial
+  - destino: 1
+    escena: {fileID: 102900000, guid: 3e52da488c95d954ab1cbca912ed889a, type: 3}
+    nombre: VideoIntroPasillo
+  - destino: 2
+    escena: {fileID: 102900000, guid: 3e52da488c95d954ab1cbca912ed889a, type: 3}
+    nombre: VideoIntroPasillo
+  - destino: 3
+    escena: {fileID: 102900000, guid: 3e52da488c95d954ab1cbca912ed889a, type: 3}
+    nombre: VideoIntroPasillo
