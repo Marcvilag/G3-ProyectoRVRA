@@ -23,5 +23,8 @@ MonoBehaviour:
     escena: {fileID: 102900000, guid: 3e52da488c95d954ab1cbca912ed889a, type: 3}
     nombre: VideoIntroPasillo
   - destino: 3
-    escena: {fileID: 102900000, guid: 3e52da488c95d954ab1cbca912ed889a, type: 3}
-    nombre: VideoIntroPasillo
+    escena: {fileID: 102900000, guid: b03b7d787f09be748a9b870c8b191b0e, type: 3}
+    nombre: PantallaTrailer
+  - destino: 4
+    escena: {fileID: 102900000, guid: 19109cb39b54e1e41981aa00921549bf, type: 3}
+    nombre: PantallaInstrucciones
