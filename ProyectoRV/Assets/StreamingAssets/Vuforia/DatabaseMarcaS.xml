@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="marca-pescado" size="0.200000 0.200000" />
+    <ImageTarget name="marca-manzana" size="0.200000 0.200000" />
+    <ImageTarget name="marca-mano" size="0.200000 0.200000" />
+    <ImageTarget name="marca-lampara" size="0.200000 0.200000" />
+    <ImageTarget name="marca-basura" size="0.200000 0.200000" />
+  </Tracking>
+</QCARConfig>
