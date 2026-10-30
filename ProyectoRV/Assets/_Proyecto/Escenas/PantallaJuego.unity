@@ -369,7 +369,7 @@ GameObject:
   - component: {fileID: 215357963}
   - component: {fileID: 215357962}
   - component: {fileID: 215357961}
-  - component: {fileID: 215357960}
+  - component: {fileID: 215357964}
   m_Layer: 0
   m_Name: ImageTarget-Manzana
   m_TagString: Untagged
@@ -377,25 +377,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &215357960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 215357959}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 215357962}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: marca-manzana
-  mDatasetName: Vuforia/DatabaseMarcaS.xml
-  mCastedBehaviour: {fileID: 215357962}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &215357961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -466,7 +447,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 215357960}
+  mPreview: {fileID: 215357964}
 --- !u!4 &215357963
 Transform:
   m_ObjectHideFlags: 0
@@ -483,6 +464,25 @@ Transform:
   - {fileID: 885305655}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &215357964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215357959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 215357962}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: marca-manzana
+  mDatasetName: Vuforia/DatabaseMarcaS.xml
+  mCastedBehaviour: {fileID: 215357962}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &229140814
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,7 +494,7 @@ GameObject:
   - component: {fileID: 229140818}
   - component: {fileID: 229140817}
   - component: {fileID: 229140816}
-  - component: {fileID: 229140815}
+  - component: {fileID: 229140819}
   m_Layer: 0
   m_Name: ImageTarget-Lampara
   m_TagString: Untagged
@@ -502,25 +502,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &229140815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 229140814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 229140817}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: marca-lampara
-  mDatasetName: Vuforia/DatabaseMarcaS.xml
-  mCastedBehaviour: {fileID: 229140817}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &229140816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -591,7 +572,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 229140815}
+  mPreview: {fileID: 229140819}
 --- !u!4 &229140818
 Transform:
   m_ObjectHideFlags: 0
@@ -608,6 +589,25 @@ Transform:
   - {fileID: 1602582511}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &229140819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229140814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 229140817}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: marca-lampara
+  mDatasetName: Vuforia/DatabaseMarcaS.xml
+  mCastedBehaviour: {fileID: 229140817}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &451844046
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,7 +619,7 @@ GameObject:
   - component: {fileID: 451844050}
   - component: {fileID: 451844049}
   - component: {fileID: 451844048}
-  - component: {fileID: 451844047}
+  - component: {fileID: 451844051}
   m_Layer: 0
   m_Name: ImageTarget-Basura
   m_TagString: Untagged
@@ -627,25 +627,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &451844047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 451844046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 451844049}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: marca-basura
-  mDatasetName: Vuforia/DatabaseMarcaS.xml
-  mCastedBehaviour: {fileID: 451844049}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &451844048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -716,7 +697,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 451844047}
+  mPreview: {fileID: 451844051}
 --- !u!4 &451844050
 Transform:
   m_ObjectHideFlags: 0
@@ -733,6 +714,25 @@ Transform:
   - {fileID: 1218852531}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &451844051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451844046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 451844049}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: marca-basura
+  mDatasetName: Vuforia/DatabaseMarcaS.xml
+  mCastedBehaviour: {fileID: 451844049}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1001 &885305654
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1198,6 +1198,131 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1001 &1628733408
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2112391481}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 209dbab9ac994c04eaeca02d9ee0ed3c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 209dbab9ac994c04eaeca02d9ee0ed3c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 209dbab9ac994c04eaeca02d9ee0ed3c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 209dbab9ac994c04eaeca02d9ee0ed3c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 209dbab9ac994c04eaeca02d9ee0ed3c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 209dbab9ac994c04eaeca02d9ee0ed3c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.042
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 209dbab9ac994c04eaeca02d9ee0ed3c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 209dbab9ac994c04eaeca02d9ee0ed3c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 209dbab9ac994c04eaeca02d9ee0ed3c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 209dbab9ac994c04eaeca02d9ee0ed3c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 209dbab9ac994c04eaeca02d9ee0ed3c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 209dbab9ac994c04eaeca02d9ee0ed3c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 209dbab9ac994c04eaeca02d9ee0ed3c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 209dbab9ac994c04eaeca02d9ee0ed3c, type: 3}
+      propertyPath: m_Name
+      value: Brazo_Abuela_Anim
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 209dbab9ac994c04eaeca02d9ee0ed3c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1816068604}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 209dbab9ac994c04eaeca02d9ee0ed3c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1816068603}
+  m_SourcePrefab: {fileID: 100100000, guid: 209dbab9ac994c04eaeca02d9ee0ed3c, type: 3}
+--- !u!1 &1816068601 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 209dbab9ac994c04eaeca02d9ee0ed3c, type: 3}
+  m_PrefabInstance: {fileID: 1628733408}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1816068602 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 209dbab9ac994c04eaeca02d9ee0ed3c, type: 3}
+  m_PrefabInstance: {fileID: 1628733408}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1816068603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816068601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7540bf5b623b0d449dc5518e96e763b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ManoAleatoria
+  animaciones:
+  - Golpe_Simple
+  - Golpe_Doble
+  - Golpe_Amago
+  pausaMin: 0
+  pausaMax: 0
+--- !u!95 &1816068604
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816068601}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fb7d7485f886fc247b95cbee7037009e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2036749586
 GameObject:
   m_ObjectHideFlags: 0
@@ -1209,7 +1334,7 @@ GameObject:
   - component: {fileID: 2036749590}
   - component: {fileID: 2036749589}
   - component: {fileID: 2036749588}
-  - component: {fileID: 2036749587}
+  - component: {fileID: 2036749591}
   m_Layer: 0
   m_Name: ImageTarget-Pescado
   m_TagString: Untagged
@@ -1217,25 +1342,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2036749587
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2036749586}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 2036749589}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: marca-pescado
-  mDatasetName: Vuforia/DatabaseMarcaS.xml
-  mCastedBehaviour: {fileID: 2036749589}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &2036749588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1306,7 +1412,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 2036749587}
+  mPreview: {fileID: 2036749591}
 --- !u!4 &2036749590
 Transform:
   m_ObjectHideFlags: 0
@@ -1323,6 +1429,25 @@ Transform:
   - {fileID: 26245532}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2036749591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036749586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 2036749589}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: marca-pescado
+  mDatasetName: Vuforia/DatabaseMarcaS.xml
+  mCastedBehaviour: {fileID: 2036749589}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &2112391477
 GameObject:
   m_ObjectHideFlags: 0
@@ -1334,7 +1459,7 @@ GameObject:
   - component: {fileID: 2112391481}
   - component: {fileID: 2112391480}
   - component: {fileID: 2112391479}
-  - component: {fileID: 2112391478}
+  - component: {fileID: 2112391482}
   m_Layer: 0
   m_Name: ImageTarget-Brazo
   m_TagString: Untagged
@@ -1342,25 +1467,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2112391478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2112391477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 2112391480}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: marca-mano
-  mDatasetName: Vuforia/DatabaseMarcaS.xml
-  mCastedBehaviour: {fileID: 2112391480}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &2112391479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1431,7 +1537,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 2112391478}
+  mPreview: {fileID: 2112391482}
 --- !u!4 &2112391481
 Transform:
   m_ObjectHideFlags: 0
@@ -1444,9 +1550,29 @@ Transform:
   m_LocalPosition: {x: 1.11, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1816068602}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2112391482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112391477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 2112391480}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: marca-mano
+  mDatasetName: Vuforia/DatabaseMarcaS.xml
+  mCastedBehaviour: {fileID: 2112391480}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
