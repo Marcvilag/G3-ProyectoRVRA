@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_Proyecto/Escenas/PantallaJuego.unity
+    guid: 4957a3b160a963a49b82330f10ef8c4b
+  - enabled: 1
     path: Assets/_Proyecto/Escenas/PruebasMenuInicial.unity
     guid: 12b16e1b75fecfd41b0cbd392ef9ecba
   - enabled: 1
