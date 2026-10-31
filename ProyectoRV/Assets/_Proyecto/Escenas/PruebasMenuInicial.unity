@@ -2054,17 +2054,9 @@ MonoBehaviour:
     iniciada: 0
     arrancando: 0
   - nombre: Acomp1
-    clip: {fileID: 8300000, guid: a0d7ddd7bdadd624cb2ac3684d487a23, type: 3}
-    grupo: {fileID: 4725780244641752334, guid: 04a2e7845e4c51b40827da5cef33f84f, type: 2}
-    retrasoInicio: 0.5
-    inicioAleatorio: 0
-    source: {fileID: 0}
-    iniciada: 0
-    arrancando: 0
-  - nombre: Acomp2
     clip: {fileID: 8300000, guid: 337f80db052e15e42b8ce09c2fb7de82, type: 3}
     grupo: {fileID: 4725780244641752334, guid: 04a2e7845e4c51b40827da5cef33f84f, type: 2}
-    retrasoInicio: 0.3
+    retrasoInicio: 4
     inicioAleatorio: 0
     source: {fileID: 0}
     iniciada: 0
