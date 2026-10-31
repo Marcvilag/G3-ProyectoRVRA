@@ -37,7 +37,7 @@ public class MusicaMenu : MonoBehaviour
 
     Coroutine fadeCo, pausaCo;
     float volumenMusicaActual = 0f;   // factor 0-1 sobre el nivel base
-    float dbBaseMusica = 0f;          // nivel del grupo Musica fijado en el mixer
+    
     bool musicaActiva;
     bool iniciado;
 
@@ -48,11 +48,6 @@ public class MusicaMenu : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         SceneManager.sceneLoaded += AlCargarEscena;
 
-        if (!mixer.GetFloat(parametroMusica, out dbBaseMusica))
-        {
-            Debug.LogWarning($"MusicaMenu: el parámetro '{parametroMusica}' no está expuesto o el nombre no coincide.");
-            dbBaseMusica = 0f;
-        }
 
         foreach (var p in pistas)
         {
@@ -78,11 +73,21 @@ public class MusicaMenu : MonoBehaviour
     }
 
     void Start()
+{
+    if (Instancia != this) return;      // copia duplicada que se está destruyendo
+
+    AjustesAudio.AplicarGuardados(mixer);
+    StartCoroutine(ReaplicarTrasUnFrame());
+
+    AplicarVolumenMusica(0f);
+    iniciado = true;
+    EvaluarEscena(SceneManager.GetActiveScene().name);
+}
+
+    IEnumerator ReaplicarTrasUnFrame()
     {
-        if (Instancia != this) return;      // copia duplicada que se está destruyendo
-        AplicarVolumenMusica(0f);
-        iniciado = true;
-        EvaluarEscena(SceneManager.GetActiveScene().name);
+        yield return null;
+        AjustesAudio.AplicarGuardados(mixer);
     }
 
     // ---------- Decidir según la escena ----------
@@ -155,12 +160,12 @@ public class MusicaMenu : MonoBehaviour
     // ---------- Volumen ----------
 
     // factor 0 = silencio, 1 = el nivel que fijaste en el mixer
-    void AplicarVolumenMusica(float factor)
-    {
-        volumenMusicaActual = factor;
-        float db = (factor <= 0.0001f) ? -80f : dbBaseMusica + Mathf.Log10(factor) * 20f;
-        mixer.SetFloat(parametroMusica, Mathf.Max(db, -80f));
-    }
+       void AplicarVolumenMusica(float factor)
+   {
+       volumenMusicaActual = factor;
+       foreach (var p in pistas)
+           if (p.source) p.source.volume = factor;
+   }
 
     public void FadeMusica(float objetivo, float segundos)
     {

@@ -98,6 +98,8 @@ AudioMixerController:
   m_ExposedParameters:
   - guid: 401c4645ef5b6f14c8988bc6a020483a
     name: VolEfectos
+  - guid: 3fb319085494ef04fb24b35d054a7ecf
+    name: VolMaster
   - guid: 7bd1efc545cb2d4478f7652fb495f254
     name: VolMusica
   m_AudioMixerGroupViews:
@@ -159,8 +161,8 @@ AudioMixerSnapshotController:
     6a9a9b61bad6b0242be0caa1d59f3e14: -18.569784
     8768c9221f6ddbe4ab279a7b0b8b3655: -28.882961
     135bcf34becb44d449ff4b94cf32ec06: -28.31707
-    7bd1efc545cb2d4478f7652fb495f254: -16.075838
-    3fb319085494ef04fb24b35d054a7ecf: -4.220343
+    7bd1efc545cb2d4478f7652fb495f254: 0
+    3fb319085494ef04fb24b35d054a7ecf: 0
   m_TransitionOverrides: {}
 --- !u!243 &1710460668291391329
 AudioMixerGroupController:
