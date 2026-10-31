@@ -35,12 +35,15 @@ public class Boton3D : MonoBehaviour,
                                          1f - Mathf.Exp(-18f * Time.deltaTime));
     }
 
-    public void OnPointerDown(PointerEventData e) { if (!busy) targetScale = baseScale * pressedScale; }
+    public void OnPointerDown(PointerEventData e) { 
+        if (OpcionesEscena.Abierta) return;
+        if (!busy) targetScale = baseScale * pressedScale; }
     public void OnPointerUp(PointerEventData e)   { if (!busy) targetScale = baseScale; }
     public void OnPointerExit(PointerEventData e) { if (!busy) targetScale = baseScale; }
 
     public void OnPointerClick(PointerEventData e)
     {
+        if (OpcionesEscena.Abierta) return;
         if (!busy) StartCoroutine(ClickRoutine());
     }
 

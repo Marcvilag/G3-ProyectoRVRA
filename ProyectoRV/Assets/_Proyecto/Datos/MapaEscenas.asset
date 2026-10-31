@@ -28,3 +28,6 @@ MonoBehaviour:
   - destino: 4
     escena: {fileID: 102900000, guid: 19109cb39b54e1e41981aa00921549bf, type: 3}
     nombre: PantallaInstrucciones
+  - destino: 5
+    escena: {fileID: 102900000, guid: f49fd9b33d2394a478ded9030aabc5dd, type: 3}
+    nombre: Opciones
