@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Proyecto/Escenas/PantallaJuego.unity
     guid: 4957a3b160a963a49b82330f10ef8c4b
+  - enabled: 1
+    path: Assets/Scenes/PantallaTrailer.unity
+    guid: b03b7d787f09be748a9b870c8b191b0e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
