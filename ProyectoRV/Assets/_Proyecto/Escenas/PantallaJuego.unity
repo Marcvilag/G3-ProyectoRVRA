@@ -141,7 +141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f758388d81c0fc54cb97776543c51319, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.018999994
+      value: 0.20600003
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f758388d81c0fc54cb97776543c51319, type: 3}
       propertyPath: m_LocalPosition.y
@@ -308,8 +308,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 7583042006105079204, guid: b81039f32b1e534459056a87202dd555, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -383,17 +383,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: DASH
+  m_text: D A S H
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 07b31db19ecc4574ea00e8bb6609cdb0, type: 2}
+  m_sharedMaterial: {fileID: -5703439290559433229, guid: 07b31db19ecc4574ea00e8bb6609cdb0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4291873279
+  m_fontColor: {r: 1, g: 0.7882353, b: 0.8156863, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1100,7 +1100,7 @@ Transform:
   m_GameObject: {fileID: 451844046}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.678, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1535,8 +1535,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -2788404399048694117, guid: 2c9bf72726dcfeb478496ca9d634e184, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1668,8 +1668,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -2580470523092673757, guid: 9aac40435b83e6f43a47f34cbe7cb6de, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1743,7 +1743,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: -1194685025707199936, guid: d9074eb78c5ab7b4d8b2b397c2115b52, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2335,7 +2335,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: -1194685025707199936, guid: d9074eb78c5ab7b4d8b2b397c2115b52, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2525,15 +2525,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.35686275, g: 0.60784316, b: 0.8352941, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 2481583794562970493, guid: c1c640adae297894dbecc19453334a0f, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2674,7 +2674,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: abdf83a4116902b4eb1f821486c231ee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.40644997
+      value: -0.21944994
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: abdf83a4116902b4eb1f821486c231ee, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2934,7 +2934,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Volver
+  m_text: 'V o l v e r '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 07b31db19ecc4574ea00e8bb6609cdb0, type: 2}
   m_sharedMaterial: {fileID: -5703439290559433229, guid: 07b31db19ecc4574ea00e8bb6609cdb0, type: 2}
@@ -2943,8 +2943,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4289913087
+  m_fontColor: {r: 1, g: 0.8784314, b: 0.69803923, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3178,6 +3178,80 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JoystickMovimientoUI
   palanca: {fileID: 1138122844}
+--- !u!1001 &2016885959
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2112391481}
+    m_Modifications:
+    - target: {fileID: 4947966049395893882, guid: efbdba13fa9a25c469bf47867617edb1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947966049395893882, guid: efbdba13fa9a25c469bf47867617edb1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947966049395893882, guid: efbdba13fa9a25c469bf47867617edb1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947966049395893882, guid: efbdba13fa9a25c469bf47867617edb1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.016
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947966049395893882, guid: efbdba13fa9a25c469bf47867617edb1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0404
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947966049395893882, guid: efbdba13fa9a25c469bf47867617edb1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947966049395893882, guid: efbdba13fa9a25c469bf47867617edb1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947966049395893882, guid: efbdba13fa9a25c469bf47867617edb1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947966049395893882, guid: efbdba13fa9a25c469bf47867617edb1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947966049395893882, guid: efbdba13fa9a25c469bf47867617edb1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947966049395893882, guid: efbdba13fa9a25c469bf47867617edb1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947966049395893882, guid: efbdba13fa9a25c469bf47867617edb1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947966049395893882, guid: efbdba13fa9a25c469bf47867617edb1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755992044466027712, guid: efbdba13fa9a25c469bf47867617edb1, type: 3}
+      propertyPath: m_Name
+      value: Brazo_Abuela_Anim
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: efbdba13fa9a25c469bf47867617edb1, type: 3}
+--- !u!4 &2016885960 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4947966049395893882, guid: efbdba13fa9a25c469bf47867617edb1, type: 3}
+  m_PrefabInstance: {fileID: 2016885959}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2036749586
 GameObject:
   m_ObjectHideFlags: 0
@@ -3360,17 +3434,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: RESET
+  m_text: R E S E T
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 07b31db19ecc4574ea00e8bb6609cdb0, type: 2}
+  m_sharedMaterial: {fileID: -5703439290559433229, guid: 07b31db19ecc4574ea00e8bb6609cdb0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294964957
+  m_fontColor: {r: 0.8666667, g: 0.9647059, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3539,10 +3613,11 @@ Transform:
   m_GameObject: {fileID: 2112391477}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.173, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2016885960}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2112391482
@@ -3621,17 +3696,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: JUGAR
+  m_text: J U G A R
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 07b31db19ecc4574ea00e8bb6609cdb0, type: 2}
+  m_sharedMaterial: {fileID: -5703439290559433229, guid: 07b31db19ecc4574ea00e8bb6609cdb0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4292935639
+  m_fontColor: {r: 0.84313726, g: 1, b: 0.8784314, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
