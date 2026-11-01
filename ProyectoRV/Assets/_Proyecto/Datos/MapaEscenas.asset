@@ -17,8 +17,8 @@ MonoBehaviour:
     escena: {fileID: 102900000, guid: 12b16e1b75fecfd41b0cbd392ef9ecba, type: 3}
     nombre: PruebasMenuInicial
   - destino: 1
-    escena: {fileID: 102900000, guid: 3e52da488c95d954ab1cbca912ed889a, type: 3}
-    nombre: VideoIntroPasillo
+    escena: {fileID: 102900000, guid: 4957a3b160a963a49b82330f10ef8c4b, type: 3}
+    nombre: PantallaJuego
   - destino: 2
     escena: {fileID: 102900000, guid: 5e22ccf28a4fbb048988287bf288bd5b, type: 3}
     nombre: VideoIntro
@@ -28,6 +28,3 @@ MonoBehaviour:
   - destino: 4
     escena: {fileID: 102900000, guid: 19109cb39b54e1e41981aa00921549bf, type: 3}
     nombre: PantallaInstrucciones
-  - destino: 5
-    escena: {fileID: 102900000, guid: f49fd9b33d2394a478ded9030aabc5dd, type: 3}
-    nombre: Opciones

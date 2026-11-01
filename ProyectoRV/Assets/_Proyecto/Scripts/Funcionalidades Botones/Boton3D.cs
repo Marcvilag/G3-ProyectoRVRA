@@ -56,7 +56,7 @@ public class Boton3D : MonoBehaviour,
         EfectosAudio.Play(clickSound, volumen, pitch);
 
 #if UNITY_ANDROID || UNITY_IOS
-        Handheld.Vibrate();
+       
 #endif
 
         yield return new WaitForSeconds(clickDelay);
