@@ -20,8 +20,8 @@ MonoBehaviour:
     escena: {fileID: 102900000, guid: 4957a3b160a963a49b82330f10ef8c4b, type: 3}
     nombre: PantallaJuego
   - destino: 2
-    escena: {fileID: 102900000, guid: 5e22ccf28a4fbb048988287bf288bd5b, type: 3}
-    nombre: VideoIntro
+    escena: {fileID: 102900000, guid: 857fac2254d80114c937e6ccb537cd0f, type: 3}
+    nombre: PantallaSelector
   - destino: 3
     escena: {fileID: 102900000, guid: b03b7d787f09be748a9b870c8b191b0e, type: 3}
     nombre: PantallaTrailer
