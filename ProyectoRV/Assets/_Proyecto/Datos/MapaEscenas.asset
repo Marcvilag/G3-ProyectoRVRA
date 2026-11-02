@@ -17,11 +17,11 @@ MonoBehaviour:
     escena: {fileID: 102900000, guid: 12b16e1b75fecfd41b0cbd392ef9ecba, type: 3}
     nombre: PruebasMenuInicial
   - destino: 1
-    escena: {fileID: 102900000, guid: 3e52da488c95d954ab1cbca912ed889a, type: 3}
-    nombre: VideoIntroPasillo
+    escena: {fileID: 102900000, guid: 4957a3b160a963a49b82330f10ef8c4b, type: 3}
+    nombre: PantallaJuego
   - destino: 2
-    escena: {fileID: 102900000, guid: 3e52da488c95d954ab1cbca912ed889a, type: 3}
-    nombre: VideoIntroPasillo
+    escena: {fileID: 102900000, guid: 857fac2254d80114c937e6ccb537cd0f, type: 3}
+    nombre: PantallaSelector
   - destino: 3
     escena: {fileID: 102900000, guid: b03b7d787f09be748a9b870c8b191b0e, type: 3}
     nombre: PantallaTrailer

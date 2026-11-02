@@ -7,12 +7,17 @@ using System.Collections;
 public class Boton3D : MonoBehaviour,
     IPointerDownHandler, IPointerUpHandler, IPointerExitHandler, IPointerClickHandler
 {
-    
+    [Tooltip("Objeto que se escala. Mejor un hijo con el modelo; si está vacío, este mismo.")]
     public Transform visual;
     public float pressedScale = 0.9f;
     public float bounceScale = 1.12f;
     public float clickDelay = 0.25f;
+
+    [Header("Sonido")]
     public AudioClip clickSound;
+    [Range(0f, 1f)] public float volumen = 1f;
+    [Range(0f, 0.2f)] public float variacionPitch = 0.05f;   // 0.05 = ±5 %
+
     public UnityEvent onClick;
 
     Vector3 baseScale, targetScale;
@@ -30,12 +35,15 @@ public class Boton3D : MonoBehaviour,
                                          1f - Mathf.Exp(-18f * Time.deltaTime));
     }
 
-    public void OnPointerDown(PointerEventData e) { if (!busy) targetScale = baseScale * pressedScale; }
+    public void OnPointerDown(PointerEventData e) { 
+        if (OpcionesEscena.Abierta) return;
+        if (!busy) targetScale = baseScale * pressedScale; }
     public void OnPointerUp(PointerEventData e)   { if (!busy) targetScale = baseScale; }
     public void OnPointerExit(PointerEventData e) { if (!busy) targetScale = baseScale; }
 
     public void OnPointerClick(PointerEventData e)
     {
+        if (OpcionesEscena.Abierta) return;
         if (!busy) StartCoroutine(ClickRoutine());
     }
 
@@ -44,9 +52,11 @@ public class Boton3D : MonoBehaviour,
         busy = true;
         targetScale = baseScale * bounceScale;
 
-        if (clickSound) AudioSource.PlayClipAtPoint(clickSound, transform.position);
+        float pitch = 1f + Random.Range(-variacionPitch, variacionPitch);
+        EfectosAudio.Play(clickSound, volumen, pitch);
+
 #if UNITY_ANDROID || UNITY_IOS
-        Handheld.Vibrate();
+       
 #endif
 
         yield return new WaitForSeconds(clickDelay);
