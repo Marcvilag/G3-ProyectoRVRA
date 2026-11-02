@@ -29,6 +29,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Proyecto/Escenas/PantallaSelector.unity
     guid: 857fac2254d80114c937e6ccb537cd0f
+  - enabled: 1
+    path: Assets/_Proyecto/Escenas/PantallaFin.unity
+    guid: 0f72edbe3791184438de6770935000a1
+  - enabled: 0
+    path: Assets/_Proyecto/Escenas/BrazoMano.unity
+    guid: 95e3289386419d54eb3f95c2d70d7d4f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
