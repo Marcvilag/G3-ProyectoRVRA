@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5941638924320795363}
   - component: {fileID: 6696399646227192761}
   - component: {fileID: 793654651915438696}
+  - component: {fileID: 8523122729089543817}
   m_Layer: 0
   m_Name: MoscaJugador
   m_TagString: Player
@@ -107,6 +108,21 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.00001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8523122729089543817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8472619055573740248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7ebd6b11d59e09419d415f34f0cf1d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EfectosMosca
+  miRenderer: {fileID: 594190308703321996}
+  sonidoPositivo: {fileID: 0}
+  sonidoNegativo: {fileID: 0}
 --- !u!1001 &7756361706115942381
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -168,6 +184,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6c40dbb11e03a14587847cb608b90bf, type: 3}
+--- !u!23 &594190308703321996 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7177292018925074529, guid: e6c40dbb11e03a14587847cb608b90bf, type: 3}
+  m_PrefabInstance: {fileID: 7756361706115942381}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1762543719453705443 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8345717446616384270, guid: e6c40dbb11e03a14587847cb608b90bf, type: 3}

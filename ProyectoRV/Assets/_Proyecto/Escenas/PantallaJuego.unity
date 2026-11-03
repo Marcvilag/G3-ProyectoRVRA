@@ -182,7 +182,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: f758388d81c0fc54cb97776543c51319, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 2d2f1a8611432ad4a8f33c08aa10d752, type: 2}
+      objectReference: {fileID: 2100000, guid: ff31c98a3fd22a64fa7e75c30150a1e8, type: 2}
     - target: {fileID: 919132149155446097, guid: f758388d81c0fc54cb97776543c51319, type: 3}
       propertyPath: m_Name
       value: Pescado
@@ -945,6 +945,103 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7002ef6665e3bf44bb3fb504436ff8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovimientoMoscaJugador
+--- !u!82 &293758511
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293758508}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 8567297955552697122, guid: 04a2e7845e4c51b40827da5cef33f84f, type: 2}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &451844046
 GameObject:
   m_ObjectHideFlags: 0
@@ -3782,6 +3879,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoscaJugador
       objectReference: {fileID: 0}
+    - target: {fileID: 8523122729089543817, guid: da116b367f4a6b34cb46f10d952ad9ea, type: 3}
+      propertyPath: sonidoNegativo
+      value: 
+      objectReference: {fileID: 8300000, guid: 85fab8edeb80aa846acf30aaa8cb863c, type: 3}
+    - target: {fileID: 8523122729089543817, guid: da116b367f4a6b34cb46f10d952ad9ea, type: 3}
+      propertyPath: sonidoPositivo
+      value: 
+      objectReference: {fileID: 8300000, guid: c3ca06ad82e819343a87321b63f8974c, type: 3}
     - target: {fileID: 8937231838773169917, guid: da116b367f4a6b34cb46f10d952ad9ea, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.11
@@ -3825,7 +3930,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8472619055573740248, guid: da116b367f4a6b34cb46f10d952ad9ea, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 293758511}
   m_SourcePrefab: {fileID: 100100000, guid: da116b367f4a6b34cb46f10d952ad9ea, type: 3}
 --- !u!1001 &7169922939191931776
 PrefabInstance:
