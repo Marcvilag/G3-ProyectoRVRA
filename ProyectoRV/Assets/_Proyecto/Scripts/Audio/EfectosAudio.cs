@@ -21,6 +21,7 @@ public class EfectosAudio : MonoBehaviour
         {
             var s = gameObject.AddComponent<AudioSource>();
             s.playOnAwake = false;
+            s.ignoreListenerPause = true;
             s.loop = false;
             s.spatialBlend = 0f;                    // sonido 2D
             s.outputAudioMixerGroup = grupoEfectos;
