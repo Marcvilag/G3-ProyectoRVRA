@@ -141,7 +141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f758388d81c0fc54cb97776543c51319, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.20600003
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f758388d81c0fc54cb97776543c51319, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1021,15 +1021,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 229140814}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.747, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.014919399, y: -0.019171366, z: -0.0002861097, w: 0.99970496}
+  m_LocalPosition: {x: 0.764, y: 0, z: -0.002}
+  m_LocalScale: {x: 1.5453702, y: 1.5453702, z: 1.5453702}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1602582511}
   - {fileID: 1602582512}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 1.709, y: -2.198, z: -0.066}
 --- !u!114 &229140819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4084,7 +4084,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: abdf83a4116902b4eb1f821486c231ee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.21944994
+      value: -0.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: abdf83a4116902b4eb1f821486c231ee, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5247,8 +5247,8 @@ Transform:
   m_GameObject: {fileID: 2112391477}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.173, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.29357, y: -0.026123, z: 0.901}
+  m_LocalScale: {x: 1.8722694, y: 1.8722694, z: 1.8722694}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2016885960}
@@ -5475,13 +5475,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1748011793105886683, guid: 52ee5a74cb6fc9d4a89db3fb9605b776, type: 3}
+      propertyPath: m_Radius
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748011793105886683, guid: 52ee5a74cb6fc9d4a89db3fb9605b776, type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748011793105886683, guid: 52ee5a74cb6fc9d4a89db3fb9605b776, type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748011793105886683, guid: 52ee5a74cb6fc9d4a89db3fb9605b776, type: 3}
+      propertyPath: m_Center.z
+      value: -0.009
+      objectReference: {fileID: 0}
     - target: {fileID: 4698801263368928592, guid: 52ee5a74cb6fc9d4a89db3fb9605b776, type: 3}
       propertyPath: camaraAR
       value: 
       objectReference: {fileID: 196266153}
     - target: {fileID: 4698801263368928592, guid: 52ee5a74cb6fc9d4a89db3fb9605b776, type: 3}
+      propertyPath: respuesta
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4698801263368928592, guid: 52ee5a74cb6fc9d4a89db3fb9605b776, type: 3}
       propertyPath: velocidad
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 4698801263368928592, guid: 52ee5a74cb6fc9d4a89db3fb9605b776, type: 3}
       propertyPath: planoControl
@@ -5496,9 +5516,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1316241260}
     - target: {fileID: 4698801263368928592, guid: 52ee5a74cb6fc9d4a89db3fb9605b776, type: 3}
+      propertyPath: alturaBajoCamara
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4698801263368928592, guid: 52ee5a74cb6fc9d4a89db3fb9605b776, type: 3}
+      propertyPath: anguloMinimoRayo
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4698801263368928592, guid: 52ee5a74cb6fc9d4a89db3fb9605b776, type: 3}
       propertyPath: joystickMovimiento
       value: 
       objectReference: {fileID: 1962449185}
+    - target: {fileID: 5742067785348467722, guid: 52ee5a74cb6fc9d4a89db3fb9605b776, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5742067785348467722, guid: 52ee5a74cb6fc9d4a89db3fb9605b776, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7409905597567024491, guid: 52ee5a74cb6fc9d4a89db3fb9605b776, type: 3}
       propertyPath: m_Name
       value: MoscaJugador
@@ -5556,13 +5592,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 229140818}
     m_Modifications:
+    - target: {fileID: 2845521830276154004, guid: a50634820b810f34faff867289b4bbe4, type: 3}
+      propertyPath: m_Size.x
+      value: 0.14999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845521830276154004, guid: a50634820b810f34faff867289b4bbe4, type: 3}
+      propertyPath: m_Size.y
+      value: 0.65454483
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845521830276154004, guid: a50634820b810f34faff867289b4bbe4, type: 3}
+      propertyPath: m_Center.x
+      value: 0.39999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845521830276154004, guid: a50634820b810f34faff867289b4bbe4, type: 3}
+      propertyPath: m_Center.y
+      value: -0.047732003
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845521830276154004, guid: a50634820b810f34faff867289b4bbe4, type: 3}
+      propertyPath: m_Center.z
+      value: 0.000000001325381
+      objectReference: {fileID: 0}
     - target: {fileID: 3597347182703164191, guid: a50634820b810f34faff867289b4bbe4, type: 3}
       propertyPath: m_Name
       value: model
       objectReference: {fileID: 0}
     - target: {fileID: 4226496993477157285, guid: a50634820b810f34faff867289b4bbe4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.21944994
+      value: -0.4
       objectReference: {fileID: 0}
     - target: {fileID: 4226496993477157285, guid: a50634820b810f34faff867289b4bbe4, type: 3}
       propertyPath: m_LocalPosition.y
