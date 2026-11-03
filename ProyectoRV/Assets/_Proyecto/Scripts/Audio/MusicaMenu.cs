@@ -29,7 +29,7 @@ public class MusicaMenu : MonoBehaviour
 
     [Header("Escenas donde suena la música")]
     public MapaEscenas mapa;
-    public Destino[] destinosConMusica = { Destino.Menu };
+    public Destino[] destinosConMusica = { Destino.Menu, Destino.Minijuego};
 
     [Header("Fundidos")]
     public float fadeIn = 3f;
