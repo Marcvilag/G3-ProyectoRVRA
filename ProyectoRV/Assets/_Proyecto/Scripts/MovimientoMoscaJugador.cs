@@ -117,15 +117,33 @@ public class MovimientoMoscaJugador : MonoBehaviour
     // Raycast desde el centro de la camara contra el collider del plano
     void ActualizarObjetivo()
     {
-        Vector3 adelante = camaraAR.transform.forward;
+        Ray rayo = new Ray(
+            camaraAR.transform.position,
+            camaraAR.transform.forward
+        );
 
-        // Solo se hace raycast si se apunta lo bastante hacia abajo
-        float limite = -Mathf.Sin(anguloMinimoRayo * Mathf.Deg2Rad);
-        if (adelante.y < limite)
+        // Intentar encontrar el punto donde miramos
+        if (planoControl.Raycast(rayo, out RaycastHit impacto, distanciaMaximaRayo))
         {
-            Ray rayo = new Ray(camaraAR.transform.position, adelante);
-            if (planoControl.Raycast(rayo, out RaycastHit impacto, distanciaMaximaRayo))
-                objetivo = LimitarAlEscenario(impacto.point);
+            objetivo = LimitarAlEscenario(impacto.point);
+        }
+        else
+        {
+            // Si el rayo no toca el plano, proyectamos
+            // la dirección de la cámara sobre el plano horizontal
+            Vector3 direccion = camaraAR.transform.forward;
+            direccion.y = 0f;
+
+            if (direccion.sqrMagnitude > 0.001f)
+            {
+                direccion.Normalize();
+
+                Vector3 nuevoObjetivo =
+                    camaraAR.transform.position +
+                    direccion * distanciaInicial;
+
+                objetivo = LimitarAlEscenario(nuevoObjetivo);
+            }
         }
 
         if (marcadorObjetivo != null)
@@ -242,9 +260,18 @@ public class MovimientoMoscaJugador : MonoBehaviour
         if (centroEscenario == null)
             return;
 
+        // Cancelar el DASH
         tiempoDash = 0f;
-        IniciarControl(true);
+
+        // Volver al centro manteniendo la altura de vuelo
+        Vector3 posicionInicial = centroEscenario.position;
+        posicionInicial.y = alturaVuelo;
+
+        transform.position = posicionInicial;
+
+        // Evitar que siga persiguiendo el objetivo anterior
+        objetivo = posicionInicial;
 
         Debug.Log("Posicion de la mosca restablecida");
-    }
+    }   
 }
