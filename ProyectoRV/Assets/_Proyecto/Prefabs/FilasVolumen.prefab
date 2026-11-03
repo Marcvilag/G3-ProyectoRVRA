@@ -100,10 +100,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ControlesVolumen
   mixer: {fileID: 24100000, guid: 04a2e7845e4c51b40827da5cef33f84f, type: 2}
   filas:
-  - canal: 0
+  - canal: 1
     slider: {fileID: 367510894249288073}
     porcentaje: {fileID: 2961524608236553495}
-  - canal: 0
+  - canal: 2
     slider: {fileID: 6181402869742295861}
     porcentaje: {fileID: 8775293485277642667}
   sonidoPrueba: {fileID: 8300000, guid: e138e72ea372ef145a3528c05bc2c7f8, type: 3}
