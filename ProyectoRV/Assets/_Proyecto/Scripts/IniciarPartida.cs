@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 public class IniciarPartida : MonoBehaviour
@@ -7,8 +6,6 @@ public class IniciarPartida : MonoBehaviour
     public Camera camaraAR;
     public GameObject moscaJugador;
     public GameObject botonJugar;
-    public GameObject joystickMovimiento;
-    public GameObject joystickAltitud;
     public Transform centroEscenario;
     public GameObject botonDash;
     public GameObject botonReset;
@@ -20,8 +17,6 @@ public class IniciarPartida : MonoBehaviour
     void Start()
     {
         moscaJugador.SetActive(false);
-        joystickMovimiento.SetActive(false);
-        joystickAltitud.SetActive(false);
         botonJugar.SetActive(true);
         botonDash.SetActive(false);
         planoShadowCatcher.SetActive(false);
@@ -42,19 +37,16 @@ public class IniciarPartida : MonoBehaviour
         // Colocar la mosca
         moscaJugador.transform.position = posicionInicial;
 
-        // Colocar el Shadow Catcher debajo de la mosca
-        Vector3 posicionPlano = posicionInicial;
-        posicionPlano.y = centroEscenario.position.y - 0.1f;
-
-        planoShadowCatcher.transform.position = posicionPlano;
-
-        // Mostrar el juego
+        // Mostrar el juego (al activarse, la mosca calcula su plano de control)
         moscaJugador.SetActive(true);
-        joystickMovimiento.SetActive(true);
-        joystickAltitud.SetActive(true);
         botonJugar.SetActive(false);
         botonDash.SetActive(true);
         botonReset.SetActive(true);
+
+        // La mosca ya esta activa y colocada (su script fija su altura): el Shadow Catcher va debajo
+        Vector3 posicionPlano = moscaJugador.transform.position;
+        posicionPlano.y -= 0.1f;
+        planoShadowCatcher.transform.position = posicionPlano;
         planoShadowCatcher.SetActive(true);
 
         Debug.Log("Partida iniciada");
