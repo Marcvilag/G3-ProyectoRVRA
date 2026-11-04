@@ -55,10 +55,13 @@ public class ObjetoRecolectable : MonoBehaviour
             if (GestorPuntos.instancia != null)
                 GestorPuntos.instancia.ModificarPuntos(puntos);
 
-            if (puntos < 0)
+            EfectosMosca efectos = objetoChocado.GetComponent<EfectosMosca>();
+            if (efectos != null)
             {
-                EfectosMosca efectos = objetoChocado.GetComponent<EfectosMosca>();
-                if (efectos != null) efectos.RecibirDano();
+                if (puntos < 0)
+                    efectos.RecibirDano();
+                else
+                    efectos.RecibirPositivo(); 
             }
 
             if (desapareceAlChocar)

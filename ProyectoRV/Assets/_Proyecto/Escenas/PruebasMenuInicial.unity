@@ -2062,7 +2062,7 @@ MonoBehaviour:
     iniciada: 0
     arrancando: 0
   mapa: {fileID: 11400000, guid: b4369549a6ec715428c88f6448ad884f, type: 2}
-  destinosConMusica: 0000000004000000
+  destinosConMusica: 000000000400000001000000
   fadeIn: 10
   fadeOut: 3
 --- !u!4 &762922905
