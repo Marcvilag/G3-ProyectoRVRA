@@ -238,12 +238,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1106763, y: 0.4916913, z: 0.3940856}
-  m_Center: {x: -0.07705722, y: -0.08606513, z: 0.0000000050077613}
+  m_Size: {x: 1.1106763, y: 0.49169138, z: 0.61935914}
+  m_Center: {x: -0.07705719, y: -0.086065136, z: -0.11263669}
 --- !u!1 &34370831
 GameObject:
   m_ObjectHideFlags: 0
@@ -3176,7 +3176,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -5336,6 +5336,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 215357963}
     m_Modifications:
+    - target: {fileID: 5454835580435959942, guid: 232e4f66e7d65234ca23664ec3e2b173, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6195364179774798124, guid: 232e4f66e7d65234ca23664ec3e2b173, type: 3}
       propertyPath: m_Name
       value: Manzana
@@ -5409,6 +5413,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: -0.009
       objectReference: {fileID: 0}
+    - target: {fileID: 1748011793105886683, guid: 52ee5a74cb6fc9d4a89db3fb9605b776, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4698801263368928592, guid: 52ee5a74cb6fc9d4a89db3fb9605b776, type: 3}
       propertyPath: camaraAR
       value: 
@@ -5445,6 +5453,34 @@ PrefabInstance:
       propertyPath: joystickMovimiento
       value: 
       objectReference: {fileID: 1962449185}
+    - target: {fileID: 4698801263368928592, guid: 52ee5a74cb6fc9d4a89db3fb9605b776, type: 3}
+      propertyPath: marcasMesa.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4698801263368928592, guid: 52ee5a74cb6fc9d4a89db3fb9605b776, type: 3}
+      propertyPath: 'marcasMesa.Array.data[0]'
+      value: 
+      objectReference: {fileID: 451844049}
+    - target: {fileID: 4698801263368928592, guid: 52ee5a74cb6fc9d4a89db3fb9605b776, type: 3}
+      propertyPath: 'marcasMesa.Array.data[1]'
+      value: 
+      objectReference: {fileID: 215357962}
+    - target: {fileID: 4698801263368928592, guid: 52ee5a74cb6fc9d4a89db3fb9605b776, type: 3}
+      propertyPath: 'marcasMesa.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2036749589}
+    - target: {fileID: 4698801263368928592, guid: 52ee5a74cb6fc9d4a89db3fb9605b776, type: 3}
+      propertyPath: 'marcasMesa.Array.data[3]'
+      value: 
+      objectReference: {fileID: 229140817}
+    - target: {fileID: 4698801263368928592, guid: 52ee5a74cb6fc9d4a89db3fb9605b776, type: 3}
+      propertyPath: 'marcasMesa.Array.data[4]'
+      value: 
+      objectReference: {fileID: 2112391480}
+    - target: {fileID: 5742067785348467722, guid: 52ee5a74cb6fc9d4a89db3fb9605b776, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5742067785348467722, guid: 52ee5a74cb6fc9d4a89db3fb9605b776, type: 3}
       propertyPath: m_IsKinematic
       value: 1
@@ -5592,6 +5628,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0.000000001325381
       objectReference: {fileID: 0}
+    - target: {fileID: 2845521830276154004, guid: a50634820b810f34faff867289b4bbe4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3597347182703164191, guid: a50634820b810f34faff867289b4bbe4, type: 3}
       propertyPath: m_Name
       value: model
@@ -5635,6 +5675,10 @@ PrefabInstance:
     - target: {fileID: 4226496993477157285, guid: a50634820b810f34faff867289b4bbe4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246062116049907938, guid: a50634820b810f34faff867289b4bbe4, type: 3}
+      propertyPath: puntos
+      value: -50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
