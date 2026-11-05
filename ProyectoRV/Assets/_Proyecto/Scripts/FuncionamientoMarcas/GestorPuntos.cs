@@ -83,4 +83,17 @@ public class GestorPuntos : MonoBehaviour
             textoTiempo.text = "Tiempo: " + minutos.ToString("00") + ":" + segundos.ToString("00");
         }
     }
+
+    public void GuardarDatosFinales()
+    {
+        // Detenemos el tiempo
+        juegoActivo = false;
+
+        // Guardamos los datos en PlayerPrefs para leerlos en la pantalla de fin
+        PlayerPrefs.SetInt("PuntuacionFinal", puntuacionTotal);
+        PlayerPrefs.SetFloat("TiempoFinal", tiempoTranscurrido);
+        PlayerPrefs.Save();
+
+        Debug.Log("Datos guardados: Puntos = " + puntuacionTotal + ", Tiempo = " + tiempoTranscurrido);
+    }
 }
