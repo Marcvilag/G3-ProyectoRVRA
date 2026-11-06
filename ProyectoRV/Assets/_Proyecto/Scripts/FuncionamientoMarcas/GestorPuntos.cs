@@ -59,6 +59,10 @@ public class GestorPuntos : MonoBehaviour
     public void ModificarPuntos(int cantidad)
     {
         puntuacionTotal += cantidad;
+        if (puntuacionTotal < 0)
+        {
+            puntuacionTotal = 0;
+        }
         Debug.Log("Puntuación actual: " + puntuacionTotal);
     }
 
