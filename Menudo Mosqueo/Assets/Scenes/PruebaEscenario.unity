@@ -486,6 +486,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pasillo3 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1433225319881910946, guid: 0d62faacae7c52e43b47bd75d62a6144, type: 3}
+      propertyPath: m_Size.x
+      value: 0.004
+      objectReference: {fileID: 0}
+    - target: {fileID: 1433225319881910946, guid: 0d62faacae7c52e43b47bd75d62a6144, type: 3}
+      propertyPath: m_Size.y
+      value: 0.004
+      objectReference: {fileID: 0}
     - target: {fileID: 3871641486391065597, guid: 0d62faacae7c52e43b47bd75d62a6144, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
