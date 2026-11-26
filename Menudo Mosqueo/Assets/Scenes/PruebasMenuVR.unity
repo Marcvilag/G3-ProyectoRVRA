@@ -3070,7 +3070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuController
   escenaJuego: Juego
-  escenaVideo360: Video360
+  escenaVideo360: Reproductor360
   panelOpciones: {fileID: 655764004}
 --- !u!4 &781352403
 Transform:
@@ -6556,7 +6556,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 781352402}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: AbrirPruebaEscenario
+        m_MethodName: AbrirVideo360
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
