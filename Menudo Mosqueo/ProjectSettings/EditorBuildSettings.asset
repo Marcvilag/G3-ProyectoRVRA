@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/PruebasMenuVR.unity
+    guid: 91c8fa19dd8d6844ab9094f3af6a519b
+  - enabled: 1
+    path: Assets/Scenes/PruebaEscenario.unity
+    guid: 9d85755927a27be4f98569782c410e2a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: b75a92fb2bcb02c4c815ea75224b2193, type: 2}
