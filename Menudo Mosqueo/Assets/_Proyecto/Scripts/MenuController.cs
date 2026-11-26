@@ -10,6 +10,7 @@ public class MenuController : MonoBehaviour
     [Header("Escenas (deben estar en File > Build Profiles > Scene List)")]
     [SerializeField] private string escenaJuego = "Juego";
     [SerializeField] private string escenaVideo360 = "Video360";
+    [SerializeField] private string PruebasMenuVR = "PruebasMenuVR";
 
     [Header("Paneles (opcional)")]
     [Tooltip("Panel con los botones principales")]
@@ -22,7 +23,7 @@ public class MenuController : MonoBehaviour
     public void AbrirVideo360() => SceneManager.LoadScene(escenaVideo360);
 
     public void AbrirPruebaEscenario() => SceneManager.LoadScene("PruebaEscenario");
-
+    public void AbrirPruebasMenuVR() => SceneManager.LoadScene(PruebasMenuVR);    
     public void AbrirOpciones()
     {
         if (panelOpciones != null) panelOpciones.Abrir();
