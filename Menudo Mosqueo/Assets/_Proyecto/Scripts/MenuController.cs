@@ -21,6 +21,8 @@ public class MenuController : MonoBehaviour
 
     public void AbrirVideo360() => SceneManager.LoadScene(escenaVideo360);
 
+    public void AbrirPruebaEscenario() => SceneManager.LoadScene("PruebaEscenario");
+
     public void AbrirOpciones()
     {
         if (panelOpciones != null) panelOpciones.Abrir();
