@@ -19,6 +19,7 @@ public class MusicaDiaNoche : MonoBehaviour
 
     float entrada;
     float progreso;
+    float multiplicador = 1f;
 
     void Start()
     {
@@ -52,8 +53,8 @@ public class MusicaDiaNoche : MonoBehaviour
     void Aplicar()
     {
         float angulo = progreso * Mathf.PI * 0.5f;
-        musicaDia.volume = Mathf.Cos(angulo) * volumenMaximo * entrada;
-        musicaNoche.volume = Mathf.Sin(angulo) * volumenMaximo * entrada;
+        musicaDia.volume = Mathf.Cos(angulo) * volumenMaximo * entrada * multiplicador;
+        musicaNoche.volume = Mathf.Sin(angulo) * volumenMaximo * entrada * multiplicador;
     }
 
     IEnumerator RutinaEfecto()
@@ -77,5 +78,11 @@ public class MusicaDiaNoche : MonoBehaviour
     {
         if (efectoNoche != null && efectoNoche.isPlaying && progreso < umbralNoche)
             efectoNoche.volume = Mathf.MoveTowards(efectoNoche.volume, 0f, Time.deltaTime);
+    }
+
+    public void SetMultiplicador(float m)
+    {
+        multiplicador = Mathf.Clamp01(m);
+        Aplicar();
     }
 }
