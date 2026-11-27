@@ -3071,6 +3071,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MenuController
   escenaJuego: Juego
   escenaVideo360: Reproductor360
+  PruebasMenuVR: PruebasMenuVR
   panelOpciones: {fileID: 655764004}
 --- !u!4 &781352403
 Transform:
@@ -7063,6 +7064,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jardin
       objectReference: {fileID: 0}
+    - target: {fileID: 3831713963565753525, guid: 8defb1241fc2e064386aaf34a197ca33, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7750132421090832926, guid: 8defb1241fc2e064386aaf34a197ca33, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -7492,9 +7497,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 781352402}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: AbrirPruebaEscenario
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7517,7 +7522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6132076, g: 0.50040054, b: 0.50040054, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
